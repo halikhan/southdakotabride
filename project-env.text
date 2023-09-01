@@ -1,0 +1,90 @@
+APP_NAME=south_dakota_bride
+APP_ENV=local
+APP_KEY=base64:PmzyvKQZYIcKAdv58ZLqhfLxHvXq6I1slyFZmkI6858=
+APP_DEBUG=true
+# APP_URL=http://localhost:8000
+APP_URL=http://localhost/south_dakota_bride/public
+
+LOG_CHANNEL=stack
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=south_dakota_bride_db
+DB_USERNAME=root
+DB_PASSWORD=
+
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+QUEUE_CONNECTION=sync
+SESSION_DRIVER=file
+SESSION_LIFETIME=525600
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.mailgun.org
+MAIL_PORT=587
+MAIL_USERNAME=postmaster@sandboxcf21897a0ca44cc19d42cdd609f61078.mailgun.org
+MAIL_PASSWORD=500da5b1de9c90726faebec88b64aab4-69210cfc-e178fc6f
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=noreply@designprosmy.com
+MAIL_FROM_NAME="South-Dakota-Bride"
+
+
+
+# MAIL_MAILER=smtp
+# MAIL_HOST=mail.designprosmy.com
+# MAIL_PORT=587
+# MAIL_USERNAME=noreply@designprosmy.com
+# MAIL_PASSWORD=HCvD*@$N-I&!
+# MAIL_ENCRYPTION=NULL
+# MAIL_FROM_ADDRESS=noreply@designprosmy.com
+# MAIL_FROM_NAME="South-Dakota-Bride"
+
+
+
+# MAIL_MAILER=smtp 2079
+# MAIL_HOST=smtp.gmail.com
+# MAIL_PORT=587
+# MAIL_USERNAME=iamjamesalbertt@gmail.com
+# MAIL_PASSWORD=qkvawzpfogwyajvd
+# MAIL_ENCRYPTION=tls
+# MAIL_FROM_ADDRESS=noreply@southdakota.com
+# MAIL_FROM_NAME="South-Dakota-Bride"
+
+
+# MAIL_MAILER=smtp
+# MAIL_HOST=smtp.mailtrap.io
+# MAIL_PORT=2525
+# MAIL_USERNAME=939809360f4272
+# MAIL_PASSWORD=29545e4629f089
+# MAIL_ENCRYPTION=null
+# MAIL_FROM_ADDRESS=noreply@southdakota.com
+# MAIL_FROM_NAME="South-Dakota-Bride"
+
+
+
+PAYPAL_MODE=sandbox
+PAYPAL_SANDBOX_CLIENT_ID=Adf6_PAq0G48YZq8jMOEB9aD-eZBcQZfJEyCNBtszoe7yEdLd_fUdadTXzK9rTP0wBCb7TIeW5ykREUd
+PAYPAL_SANDBOX_CLIENT_SECRET=ELwDD1Cv_rivlZ2sdP4WwnRkDimPqFR1Bjw2BvjjQIebv4aRaJe6x4pvVddHir7aqghQldX3Wd9gcExA
+
+
+
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_DEFAULT_REGION=us-east-1
+AWS_BUCKET=
+
+PUSHER_APP_ID=
+PUSHER_APP_KEY=
+PUSHER_APP_SECRET=
+PUSHER_APP_CLUSTER=mt1
+
+MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
+MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
+
