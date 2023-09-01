@@ -1,0 +1,39 @@
+.row {
+	text-align: center;
+}
+
+.carousel {
+	left: 50%;
+	position: realtive
+	width: 1000px;
+	margin-left: -500px;
+	overflow: hidden;
+	height: 500px;
+	top: 50px;
+}
+
+.carousel .item {
+	width: 350px;
+	height: 232px;
+	vertical-align: middle;
+}
+
+.controls {
+	position: relative;
+	top: 0px;
+	left: 50%;
+	width: 150px;
+	margin-left: -75px;
+}
+
+.controls a {
+	display: block;
+}
+
+.controls .previous {
+	float: left;
+}
+
+.controls .next {
+	float: right;
+}

@@ -1,0 +1,150 @@
+<?php $__env->startSection('title', 'Project List'); ?>
+<?php $__env->startSection('title', 'Base Inputs'); ?>
+
+<?php $__env->startSection('css'); ?>
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/vendors/animate.css')); ?>">
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/vendors/date-picker.css')); ?>">
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/vendors/dropzone.css')); ?>">
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('style'); ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('breadcrumb-title'); ?>
+<h3>Privacy-Policy</h3>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('breadcrumb-items'); ?>
+<li class="breadcrumb-item">Privacy-Policy</li>
+<li class="breadcrumb-item active">Edit</li>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+
+    <style>
+        .for-ctm-height{
+            max-height:200px !important;
+            min-height:200px !important;
+        }
+        .cke_contents.cke_reset{
+            max-height:200px !important;
+            min-height:200px !important;
+        }
+    </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-header">
+                <h5>Edit</h5>
+            </div>
+            
+                <form class="form theme-form"id="" action="<?php echo e(route("privacyUpdate",$edit_data->id)); ?>" enctype="multipart/form-data" method="post">
+                    <?php echo csrf_field(); ?>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label class="col-sm-3 col-form-label">Title.*</label>
+                                <input name="title" class="form-control" type="title" value="<?php echo e($edit_data->title); ?>">
+                                 </select>
+                                <?php $__errorArgs = ['title'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                                    <p class="help-block" style="color: red">
+                                        <?php echo e($errors->first('title')); ?>
+
+                                    </p>
+                                <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3 mb-0">
+                                
+                                <label for="exampleFormControlTextarea14">Enter Description</label>
+                                <textarea name="description" class="ckeditor form-control btn-square .for-ctm-height" id="exampleFormControlTextarea14" rows="3"><?php echo e($edit_data->description); ?></textarea>
+
+                                <?php $__errorArgs = ['description'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                                    <p class="help-block" style="color: red">
+                                        <?php echo e($errors->first('description')); ?>
+
+                                    </p>
+                                <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary" type="submit">Update</button>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('script'); ?>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('#image').change(function(e){
+        var reader = new FileReader();
+        reader.onload = function(e){
+          $('#showImage').attr('src',e.target.result);
+        }
+        reader.readAsDataURL(e.target.files['0']);
+      });
+    });
+  </script>
+
+<script src="<?php echo e(asset('assets/js/datepicker/date-picker/datepicker.js')); ?>"></script>
+<script src="<?php echo e(asset('assets/js/datepicker/date-picker/datepicker.en.js')); ?>"></script>
+<script src="<?php echo e(asset('assets/js/datepicker/date-picker/datepicker.custom.js')); ?>"></script>
+<script src="<?php echo e(asset('assets/js/dropzone/dropzone.js')); ?>"></script>
+<script src="<?php echo e(asset('assets/js/dropzone/dropzone-script.js')); ?>"></script>
+<script src="<?php echo e(asset('assets/js/typeahead/handlebars.js')); ?>"></script>
+<script src="<?php echo e(asset('assets/js/typeahead/typeahead.bundle.js')); ?>"></script>
+<script src="<?php echo e(asset('assets/js/typeahead/typeahead.custom.js')); ?>"></script>
+<script src="<?php echo e(asset('assets/js/typeahead-search/handlebars.js')); ?>"></script>
+<script src="<?php echo e(asset('assets/js/typeahead-search/typeahead-custom.js')); ?>"></script>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startPush('scripts'); ?>
+
+<?php if($errors->any()): ?>
+<?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+    <script>toastr.error('<?php echo e($error); ?>')</script>
+<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+<?php endif; ?>
+
+<?php if(Session::has('user_updated')): ?>
+    <script>swal('User Profile','<?php echo e(Session::get('user_updated')); ?>','success')</script>
+<?php endif; ?>
+
+<?php if(Session::has('user_error')): ?>
+    <script>swal('User Profile','<?php echo e(Session::get('user_error')); ?>','success')</script>
+<?php endif; ?>
+
+<?php $__env->stopPush(); ?>
+
+<?php echo $__env->make('layouts.simple.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\south-dakota-bride\resources\views/privacy-policy/edit.blade.php ENDPATH**/ ?>

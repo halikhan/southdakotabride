@@ -1,0 +1,406 @@
+/**********   ------------ Header Css  Start -------------    **********/
+
+
+header.header .logo {
+    height: 100px;
+}
+
+header.header .logo a img {
+    width: 100%;
+    height: 100%;
+}
+
+header.header .logo {
+    width: 150px;
+    height: 80px;
+}
+
+header.header ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header.header .mainRow {
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header.header .col-lg-3 .header-nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header.header .header-nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header.header .header-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    position: relative;
+    font-family: gilroylight;
+}
+
+header.header .header-nav ul li a i {
+    color: #086db0;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+header.header .header-nav ul li a:hover {
+    color: #d72322;
+    font-family: gilroybold;
+    transition: all 0.5s ease;
+    font-size: 17px;
+}
+
+header.header .header-nav ul li a.active {
+    color: #d72322;
+    font-family: gilroybold;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+header.header .header-nav ul li a.active:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: 2px solid #d72322;
+}
+
+header.header .header-nav ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+header.header .col-lg-3 .header-nav ul li {
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+header.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0px 0px;
+    transition: all 1s ease;
+    z-index: 10;
+    background-color: #2c2c2c;
+}
+
+header.header .header-nav {
+    width: 70%;
+    margin-left: auto;
+    margin-right: 70px;
+}
+
+header.header .col-lg-3 .header-nav {
+    width: 100%;
+    margin-left: auto;
+    margin-right: 70px;
+}
+
+/* FIXED HEADER CSS  */
+header.header.fixedHeader {
+    background-color: #2c2c2c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0px 0px;
+    z-index: 10;
+    transition: all 1s ease;
+}
+
+/********** Header Css End  **********/
+
+
+
+
+/**********    -------------- Small screen menu Start ------------    ***********/
+
+
+.menu-small-screen {
+    display: none;
+}
+
+.toggle-small-screen button {
+    display: block;
+    background-color: transparent;
+    border: none;
+}
+
+.toggle-small-screen button img {
+    width: 40px;
+    height: 30px;
+}
+
+.toggle-small-screen {
+    float: right;
+    position: relative;
+    right: 0px;
+}
+
+.btn-close {
+    background: transparent url(./assets/images/1x/close.png) center/40px auto no-repeat !important;
+}
+
+.offcanvas-header {
+    padding: 2rem 1rem !important;
+}
+
+header.header .offcanvas {
+    background-color: #000;
+    color: #fff;
+    max-width: 300px;
+}
+
+header.header .offcanvas .menus-offcanvas ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header.header .offcanvas .menus-offcanvas ul li {
+    display: block;
+    margin: 10px 0px;
+}
+
+header.header .offcanvas .menus-offcanvas ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header.header .offcanvas .offcanvas-header .btn-close {
+    color: #fff;
+    width: 16px;
+    height: 16px;
+    /* filter: invert(1); */
+    background-size: contain;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+header.header .offcanvas .header-icons-nav ul {
+    margin: 0;
+    padding: 10px 0px;
+    list-style: none;
+}
+
+header.header .offcanvas .header-icons-nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header.header .offcanvas .header-icons-nav ul li a {
+    font-size: 20px;
+    color: #000;
+}
+
+/**********    -------------- Small screen menu End ------------    ***********/
+
+
+.log-out-button {
+    border: none;
+    background: #fff;
+    padding: 8px 14px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+.log-out-button i {
+    margin-right: 10px;
+}
+
+.tabs-side-bar-width {
+    width: 14%;
+}
+
+
+.tabs-side-bar {
+    width: 16%;
+    position: fixed;
+    height: 100vh;
+    padding: 2rem;
+    background-color: #2c2c2c;
+    border-top-right-radius: 50px;
+}
+
+
+.for-content-tabs {
+    width: 84%;
+    margin-left: auto;
+    background-color: #fff;
+    padding: 2rem 2rem;
+}
+
+.for-cstm-tabs-button {
+    color: #fff !important;
+    background: transparent !important;
+    border: none;
+    font-family: PlayfairDisplay-Regular;
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+.login-content2.placeholder-white input::placeholder {
+    color: #2c2c2c;
+}
+
+.login-content2 input {
+    width: 80%;
+    margin-top: 2rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #2c2c2c;
+    padding-bottom: 1rem;
+    font-family: PlayfairDisplay-Regular;
+}
+
+
+.black-btn-width {
+    width: 16%;
+}
+
+.tabs-ul {
+    list-style: none;
+    padding: 0 !important;
+}
+
+.tabs-ul li {
+    text-align: left;
+}
+
+.tabs-ul li button {
+    width: 100%;
+
+}
+
+.sidenav {
+    display:none;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    left: 0;
+    background-color: #2c2c2c;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav-open-btn{
+    display: none;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    font-family: PlayfairDisplay-Regular;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 50px;
+    margin-left: 50px;
+    border:none;
+    background:transparent;
+    outline:none;
+    color:#fff;
+}
+.active,
+.for-cstm-tabs-button:hover {
+ color: #086db0 !important;
+  }
+
+
+@media only screen and (max-width: 1024px) {
+
+
+    .tabs-side-bar-width {
+        width: 0%;
+        display: none;
+    }
+    .sidenav {
+        display:block;
+    }
+    .for-content-tabs {
+        width: 100%;
+    }
+
+    .sidenav-open-btn {
+        position: fixed;
+        display:block;
+        left: 1rem;
+        font-size: 40px;
+        cursor: pointer;
+        background: #2c2c2c;
+        padding: 0px 24px;
+        color: #fff;
+        border-radius: 7px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 414px) {
+
+    .for-content-tabs {
+        padding: 2rem 1rem;
+    }
+
+    .login-content2 input {
+        width: 100%;
+    }
+
+    .black-btn-width {
+        width: 56%;
+    }
+
+    .for-content-tabs .tab-pane .col-lg-12.mt8.for-removed-margin {
+        margin-top: 2rem !important;
+    }
+
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+    .sidenav-open-btn {
+        font-size: 26px;
+        padding: 0px 12px;
+        border-radius: 6px;
+    }
+}

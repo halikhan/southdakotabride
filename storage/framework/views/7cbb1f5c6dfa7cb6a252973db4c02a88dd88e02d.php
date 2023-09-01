@@ -1,0 +1,2 @@
+<?php echo $__env->make('user-dashboard.layouts.head', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<?php /**PATH C:\xampp\htdocs\south-dakota-bride\resources\views/user-dashboard/layouts/header.blade.php ENDPATH**/ ?>
